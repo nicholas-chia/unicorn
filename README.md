@@ -8,7 +8,7 @@
    * Select Username Inventory when prompted.
 4. Go to Inventory Tab
    * Select INVENTORIES / Username INVENTORY / AP-SOUTHEAST-1 / TAGS / TAG_ANSIBLE_GROUP / TAG_ANSIBLE_GROUP_LB
-   * Copy the IP Address appearing on the left side
+   * Copy the IP Address appearing on the right side
    * Paste the IP Address on a new Browser window and add :8888 at the end
    * Click Enter to go
    * Refresh Browser window to see Round-Robin load-balancing in effect
