@@ -1,3 +1,3 @@
 ---
 - name: Copy the code from repository
-  git: repo=https://github.com/nicholas-chia/mywebapp.git dest=/var/www/html/
+  git: repo={{ repository }} dest=/var/www/html/
