@@ -4,3 +4,4 @@
   git: 
     repo: "{{ repository }}"
     dest: /var/www/html/
+    version: master
