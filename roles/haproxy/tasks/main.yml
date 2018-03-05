@@ -3,6 +3,12 @@
 
 - name: Download and install haproxy
   yum: name=haproxy state=present
+  
+- name: Configure SELinux to allow haproxy to connect any TCP port
+  seboolean:
+    name: haproxy_connect_any
+    state: true
+    persistent: yes
 
 - name: Configure the haproxy cnf file with hosts
   template: src=haproxy.cfg.j2 dest=/etc/haproxy/haproxy.cfg
