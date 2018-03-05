@@ -5,6 +5,7 @@
   yum: name={{ item }} state=present
   with_items:
    - httpd
+   - git
    
 - name: Configure SELinux to allow haproxy to connect any TCP port
   seboolean:
