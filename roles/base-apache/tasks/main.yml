@@ -6,12 +6,6 @@
   with_items:
    - httpd
    - git
-   
-- name: Configure SELinux to allow haproxy to connect any TCP port
-  seboolean:
-    name: haproxy_connect_any
-    state: true
-    persistent: yes
 
 - name: http service state
   service: name=httpd state=started enabled=yes
