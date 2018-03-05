@@ -12,7 +12,6 @@
     name: haproxy_connect_any
     state: true
     persistent: yes
-  when: sestatus.rc != 0
 
 - name: http service state
   service: name=httpd state=started enabled=yes
